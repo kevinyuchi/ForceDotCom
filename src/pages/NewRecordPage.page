@@ -1,0 +1,15 @@
+<apex:page standardController="DataCenter__c"  id="recordView">
+	<apex:SectionHeader title="Data Center Record"/>
+	<apex:pagemessages/>
+	<apex:form>
+		<apex:pageBlock title="Target Data Center" mode="edit">
+			<apex:pageBlockButtons>
+				<apex:commandButton action="{!save}" value="Save"/>
+			</apex:pageBlockButtons>
+			<apex:pageBlockSection title="Target Date Center Section" columns="2">
+				<apex:inputField value="{!dataCenter__c.name}"/>
+				<apex:outputField value="{!dataCenter__c.id}"/>
+			</apex:pageBlockSection>	
+		</apex:pageBlock>
+	</apex:form>
+</apex:page> 
